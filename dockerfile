@@ -6,7 +6,7 @@ WORKDIR /
 # Copy the current directory contents into the container at /
 COPY . /
 
-RUN mvn package
+RUN ls && mvn package
 VOLUME ["/usr/share/maven","/root/.m2"]
 FROM openjdk:8
 
