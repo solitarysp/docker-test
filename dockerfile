@@ -12,5 +12,5 @@ FROM openjdk:8
 
 WORKDIR /
 # coppy từ image 0 với url thư mục  WebXBE/target/ đến / của container này
-COPY --from=0 /WebXBE/target/ .
+COPY --from=0 /target/ .
 CMD ["java","-jar","docker-test-1.0-SNAPSHOT.jar"]
